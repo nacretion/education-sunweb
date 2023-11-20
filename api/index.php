@@ -1,7 +1,11 @@
 <?php
-header('Content-Type: application/json; charset=utf-8');
 
-require_once './FibApi.php';
+spl_autoload_register(function ($class) {
+    include './' . str_replace('Services\\', '', $class) . '.php';
+});
+header("Content-Type: application/json");
+
+use Services\FibApi;
 
 try {
     $api = new FibApi();

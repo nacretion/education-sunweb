@@ -1,36 +1,46 @@
-const httpRequest = new XMLHttpRequest();
 const baseURL = "http://localhost/api/"
 
 const input = document.getElementById('length')
 const fibContainer = document.getElementById('fibContainer')
-
-
-const handleInput = (e) => {
-    event.preventDefault()
-    fetchFibonacci(e.target.value)
-}
+const form = document.getElementById('form')
 
 const fetchFibonacci = (length) => {
     const params = '?length=' + length
 
-    httpRequest.open("GET", baseURL + params, true);
-    httpRequest.send();
+    fetch(baseURL + params)
+        .then(
+            (response) => response.json()
+            .then((body) => showData(body))
+        )
 }
 
-const showData = (e) => {
-    if (httpRequest.readyState === XMLHttpRequest.DONE) {
-        const fibonacciArray = JSON.parse(e.target.response)
-        console.log(fibonacciArray)
-        fibContainer.innerHTML = ''
+const debounce = (callback, interval = 0) => {
+    let prevTimeoutId;
 
-        fibonacciArray.forEach((entry, index) => {
-
-            let elementClass = entry % 2 === 0 ? 'blue' : 'red';
-
-            fibContainer.innerHTML += `<li class="${elementClass}">${entry}</li>`
-        })
+    return (...args) => {
+        clearTimeout(prevTimeoutId);
+        prevTimeoutId = setTimeout(() => callback(...args), interval);
     }
 }
+
+const showData = (fibonacciArray) => {
+    if (!fibContainer) {
+        return
+    }
+
+    fibContainer.innerHTML = ''
+
+    fibonacciArray.forEach((entry) => {
+        let elementClass = entry % 2 === 0 ? 'blue' : 'red';
+
+        const li = document.createElement('li')
+        li.className = elementClass
+        li.innerHTML = entry
+        fibContainer.appendChild(li)
+    })
+}
+
+const Li = () => {}
 
 const handleLiHover = (e) => {
     const {tagName, innerHTML} = e.target
@@ -40,7 +50,12 @@ const handleLiHover = (e) => {
     }
 }
 
-
-httpRequest.onreadystatechange = showData;
-input.addEventListener('input', handleInput)
+if (input) {
+    input.addEventListener('input', debounce(ev => fetchFibonacci(ev.target.value), 500))
+}
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+    })
+}
 document.addEventListener('mouseover', handleLiHover)
