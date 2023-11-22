@@ -25,6 +25,24 @@ const app = new Vue({
         },
     },
     methods: {
+        handleInput: function (e) {
+            // можно переделать переменные на объект и обращаться по ключу
+            // this.numbers[e.target.id] = e.target.value
+            const {id,value} = e.target
+            const intValue = parseInt(value)
+            if (isNaN(intValue) || intValue < 0) {
+                e.target.value = ''
+                return
+            }
+            switch (id) {
+                case "firstNumber":
+                    this.firstNumber = intValue
+                    return
+                case "secondNumber":
+                    this.secondNumber = intValue
+                    return
+            }
+        },
         calculate: function () {
             const {firstNumber, secondNumber} = this
             if (!firstNumber || !secondNumber) {
