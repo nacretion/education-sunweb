@@ -5,11 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/content.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
     <title>Document</title>
 </head>
 <body>
-<div class="menu__modal">
+<div style="display: none" class="menu__modal">
     <button class="modal__close"></button>
     <nav class="modal__nav">
         <a class="modal__logo flex-align-center">
@@ -44,10 +47,199 @@
     </div>
 </header>
 <main class="main">
+    <section class="page__info">
+        <h1 class="page__info__heading">Контакты</h1>
+        <section class="page__info__text">
+            <h2 class="page__info__text__heading">Центральный офис</h2>
+            <p class="page__info__text__content">
+                Тюмень, ул.Червишевский&nbsp;тракт&nbsp;д.37, 3&nbsp;этаж, оф.313
+                <br/>
+                Пн-Пт 8:00 до 17:00
+                <br/>
+                Сб-Вс Выходной
+                <br/>
+                <a>+7&nbsp;(3452)&nbsp;500-301</a> (многоканальный)
+                <br/>
+                <a>eurobeton72@mail.ru</a>
+            </p>
+            <div class="page__info__social">
+                <a class="social social-insta"></a>
+                <a class="social social-vk"></a>
+            </div>
+        </section>
+        <section class="page__info__text">
+            <h2 class="page__info__text__heading">Производство</h2>
+            <p class="page__info__text__content">
+                Пн-Вс 8:00 до 22:00
+                <br/>
+                <a>+7&nbsp;(3452)&nbsp;500-401</a>
 
+            </p>
+        </section>
+    </section>
+    <section class="page__staff">
+
+        <section class="page__staff__department">
+            <h2 class="page__staff__department__heading">Офис</h2>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo1.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Маркин Эдуард
+                    </p>
+                    <p class="card__text__role">
+                        Генеральный директор
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo2.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Человечкова Ирина
+                    </p>
+                    <p class="card__text__role">
+                        Главный бухглатер
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo3.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Сычева Анастасия
+                    </p>
+                    <p class="card__text__role">
+                        Бухглатер
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo4.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Салмин Николай
+                    </p>
+                    <p class="card__text__role">
+                        Менеджер
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo5.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Алексеева Ирина
+                    </p>
+                    <p class="card__text__role">
+                        Менеджер
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <section class="page__staff__department">
+            <h2 class="page__staff__department__heading">Производство</h2>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo1.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Маркин Эдуард
+                    </p>
+                    <p class="card__text__role">
+                        Генеральный директор
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo2.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Человечкова Ирина
+                    </p>
+                    <p class="card__text__role">
+                        Главный бухглатер
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo3.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Сычева Анастасия
+                    </p>
+                    <p class="card__text__role">
+                        Бухглатер
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo4.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Салмин Николай
+                    </p>
+                    <p class="card__text__role">
+                        Менеджер
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <img class="card__image" src="./src/assets/photo5.jpeg" alt="employee">
+                <div class="card__text">
+                    <p class="card__text__name">
+                        Алексеева Ирина
+                    </p>
+                    <p class="card__text__role">
+                        Менеджер
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class="page__about">
+        <p class="page__about__text">
+            Компания «ЕвроБетон» в&nbsp;разделе галереи, с&nbsp;радостью делится настоящими фотографиями со&nbsp;строительных объектов. Это лишь небольшая часть фотографий нашего продукта, производимого на&nbsp;протяжении нескольких лет.
+        </p>
+        <h2 class="page__about__heading">Запечатленный бетон</h2>
+        <p class="page__about__text">Наша компания производит товарный бетон основных марок. В&nbsp;данном разделе можно посмотреть фотографии с&nbsp;реальных объектов, которые придадут застройщикам уверенности в&nbsp;подлинности нашей продукции. В&nbsp;галереи также можно найти фотографии нашего персонала, воплощающего многолетний опыт работы компании и&nbsp;доставляющий высококачественный бетон с&nbsp;длительным сроком службы .</p>
+        <p class="page__about__text">Глядя на&nbsp;фотографии с&nbsp;объектов, не&nbsp;трудно заметить, что на&nbsp;всей технике расположены фирменные логотипы компании. Это лишний раз подтверждает, что мы работаем только по&nbsp;европейским нормам качества. Все выполненные объекты в&nbsp;галерее нашего сайта, можно воплотить в&nbsp;реальность любому застройщику или&nbsp;частному лицу. Наши сотрудники всегда проконсультируют с&nbsp;целью достижения наилучшего результата. Бетонная продукция на&nbsp;фотографиях, произведена из&nbsp;качественных материалов, что&nbsp;придает ей долговечности и&nbsp;необходимой прочности. Заказав у&nbsp;нас товарный бетон, взамен вы&nbsp;получите качественную продукцию и&nbsp;квалифицированную помощь наших сотрудников. С&nbsp;таким подходом к&nbsp;работе, нужный результат вам обеспечен!</p>
+    </section>
 </main>
 <footer class="footer">
-
+    <form class="footer__form">
+        <div class="footer__form__label">
+            <h1 class="footer__form__heading">Остались вопросы?</h1>
+            <p class="footer__form__text">Заходите на кофе - мы всегда вам рады.</p>
+        </div>
+        <div class="footer__form__inputs">
+            <input
+                    class="footer__form__input"
+                    placeholder="Имя"
+            />
+            <input
+                    class="footer__form__input"
+                    placeholder="+7 (___)-___-__-__*"
+            />
+            <input
+                    class="footer__form__input"
+                    placeholder="Комментарий"
+            />
+        </div>
+        <button class="footer__form__submit">
+            ОТправить
+        </button>
+        <p class="footer__form__agreement">
+            Нажимая кнопку "отправить" вы подтверждаете, что ознакомлены и&nbsp;согласны с&nbsp;условиями <a>политики конфиденциальности</a>.
+        </p>
+    </form>
+    <section class="footer__contacts">
+        <a class="footer__contacts__link">+7&nbsp;(3452)&nbsp;500-301</a>
+        <a class="footer__contacts__link">Eurobeton72@mail.ru</a>
+        <p class="footer__contacts__quote">
+            &#169; Евробетон, 2022. г. Тюмень,<br/>ул.Червишевский тракт, д.37, 3 этаж
+        </p>
+    </section>
 </footer>
 <script src="src/script.js"></script>
 </body>

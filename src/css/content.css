@@ -1,0 +1,180 @@
+@import url("vars.css");
+
+
+.page__info {
+    display: flex;
+    width: 100%;
+    padding: 32px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    background: var(--Light-black);
+}
+
+.page__info__heading {
+    display: flex;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+
+    color: var(--Light-Gray);
+    font-family: "RF Dewi Expanded", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 40.8px */
+    text-transform: uppercase;
+}
+.page__info__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.page__info__text__heading {
+    color: var(--Dark-Grey);
+
+    /* H5/1600 */
+    font-family: "RF Dewi Expanded", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 21.6px */
+}
+.page__info__text__content {
+    color: var(--Light-Gray);
+
+    /* Text */
+    font-family: "RF Dewi", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.social {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.page__info__social {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.social-insta {
+    background: url("../assets/insta.svg") no-repeat center;
+}
+
+.social-vk {
+    background: url("../assets/vk.svg") no-repeat center;
+}
+
+.page__info__text__content a {
+    color: var(--Red);
+    font-family: "RF Dewi", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-line: underline;
+}
+
+.page__staff__department {
+    display: flex;
+    width: 390px;
+    padding: 32px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.page__staff__department__heading {
+    width: 100%;
+    color: var(--Light-black);
+
+    /* H2/390 */
+    font-family: "RF Dewi Expanded", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 36px */
+    text-transform: uppercase;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.card__image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.card__text__name {
+    color: #000;
+
+    /* H5/1600 */
+    font-family: "RF Dewi Expanded", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 21.6px */
+}
+.card__text__role {
+    color: var(--Red);
+
+    /* Text */
+    font-family: "RF Dewi", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.page__about {
+    display: flex;
+    width: 390px;
+    padding: 32px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.page__about__text {
+    color: var(--Dark-Grey);
+
+    /* Text */
+    font-family: "RF Dewi", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.page__about__heading {
+    color: var(--Dark-Grey);
+
+    /* H5/1600 */
+    font-family: "RF Dewi Expanded", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 21.6px */
+}
