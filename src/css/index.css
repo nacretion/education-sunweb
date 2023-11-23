@@ -1,30 +1,83 @@
-@import url("vars.css");
+.dewi-400 {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
 
+.dewi-700, .button {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.dewi-900 {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --White: #fff;
+  --Black: #000;
+  --Red: #E63E35;
+  --Grey: #B8B8B8;
+  --Grey-Dark: #696969;
+  --Light-black: #161515;
+  --Light-Gray: #FBFBFB;
+  --Dark-Grey: #5D5D5D;
+}
+
+@font-face {
+  font-family: "RF Dewi Expanded";
+  src: local("RF Dewi Expanded Black"), local("RFDewiExpanded-Black"), url("../assets/fonts/RFDewiExpanded-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi";
+  src: local("RF Dewi Regular"), local("RFDewi-Regular"), url("../assets/fonts/RFDewi-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi";
+  src: local("RF Dewi Bold"), local("RFDewi-Bold"), url("../assets/fonts/RFDewi-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "RF Dewi Expanded", sans-serif;
-    background: var(--White);
+  background: var(--White);
 }
 
 .button {
-    display: flex;
-    padding: 10px 8px;
-    background: none;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--Black);
-
-    /* text styles */
-    color: var(--Black);
-    font-family: 'RF Dewi', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%; /* 14px */
-    text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px;
+  background: none;
+  border: 2px solid var(--Black);
+  color: var(--Black);
+  font-size: 14px;
+  text-transform: uppercase;
 }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,36 +1,10 @@
-.dewi-400, .page__about__text, .card__text__role, .page__info__text__content {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-}
+@import "vars.scss";
 
-.dewi-700 {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.dewi-900, .page__about__heading, .card__text__name, .page__staff__department__heading, .page__info__text__heading {
-  font-family: "RF Dewi Expanded", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 120%;
-}
-
-.flexColumn, .page__about, .card__text, .page__staff__department, .page__info__text, .page__info__heading, .page__info {
-  display: flex;
-  flex-direction: column;
-}
-
-.flexCenter, .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .page__info {
+  @extend .flexColumn;
   align-items: flex-start;
+
   width: 100%;
   padding: 32px 16px;
   background: var(--Light-black);
@@ -38,8 +12,11 @@
 }
 
 .page__info__heading {
+  @extend .flexColumn;
   justify-content: center;
+
   height: 58px;
+
   color: var(--Light-Gray);
   font-family: "RF Dewi Expanded", sans-serif;
   font-size: 34px;
@@ -49,19 +26,23 @@
 }
 
 .page__info__text {
+  @extend .flexColumn;
   gap: 8px;
   align-items: flex-start;
 }
 
 .page__info__text__heading {
+  @extend .dewi-900;
   color: var(--Dark-Grey);
 }
 
 .page__info__text__content {
+  @extend .dewi-400;
   color: var(--Light-Gray);
 }
 
 .social {
+  @extend .flexCenter;
   width: 24px;
   height: 24px;
 }
@@ -86,15 +67,19 @@
 }
 
 .page__staff__department {
+  @extend .flexColumn;
   align-items: flex-start;
   gap: 32px;
+
   width: 390px;
   padding: 32px 16px;
 }
 
 .page__staff__department__heading {
+  @extend .dewi-900;
   width: 100%;
   color: var(--Light-black);
+
   font-size: 24px;
   line-height: 150%;
   text-transform: uppercase;
@@ -113,30 +98,35 @@
 }
 
 .card__text {
+  @extend .flexColumn;
   align-items: flex-start;
 }
 
 .card__text__name {
+  @extend .dewi-900;
   color: var(--Black);
 }
 
 .card__text__role {
+  @extend .dewi-400;
   color: var(--Red);
 }
 
 .page__about {
+  @extend .flexColumn;
   align-items: flex-start;
   gap: 16px;
+
   width: 390px;
   padding: 32px 16px;
 }
 
 .page__about__text {
+  @extend .dewi-400;
   color: var(--Dark-Grey);
 }
 
 .page__about__heading {
+  @extend .dewi-900;
   color: var(--Dark-Grey);
 }
-
-/*# sourceMappingURL=content.css.map */

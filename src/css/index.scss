@@ -1,0 +1,66 @@
+@import "vars.scss";
+
+:root {
+  --White: #fff;
+  --Black: #000;
+  --Red: #E63E35;
+  --Grey: #B8B8B8;
+  --Grey-Dark: #696969;
+  --Light-black: #161515;
+  --Light-Gray: #FBFBFB;
+  --Dark-Grey: #5D5D5D;
+}
+
+@font-face {
+  font-family: 'RF Dewi Expanded';
+  src: local('RF Dewi Expanded Black'), local('RFDewiExpanded-Black'),
+  url('../assets/fonts/RFDewiExpanded-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Dewi';
+  src: local('RF Dewi Regular'), local('RFDewi-Regular'),
+  url('../assets/fonts/RFDewi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Dewi';
+  src: local('RF Dewi Bold'), local('RFDewi-Bold'),
+  url('../assets/fonts/RFDewi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--White);
+}
+
+.flexColumn {
+
+}
+
+.button {
+  @extend .dewi-700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 8px;
+  background: none;
+  border: 2px solid var(--Black);
+
+  color: var(--Black);
+  font-size: 14px;
+  text-transform: uppercase;
+}

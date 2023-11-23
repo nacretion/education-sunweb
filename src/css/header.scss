@@ -1,43 +1,17 @@
-.dewi-400, .nav__link {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.dewi-700 {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.dewi-900, .modal__logo .header__logo__title {
-  font-family: "RF Dewi Expanded", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 120%;
-}
-
-.flexColumn, .modal__nav, .menu__modal, .header {
-  display: flex;
-  flex-direction: column;
-}
-
-.flexCenter, .header__menu, .header__call {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "vars.scss";
 
 .header {
+  @extend .flexColumn;
   width: 100vw;
 }
+
 
 .header__content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
+
   width: 100%;
   padding: 8px 16px;
 }
@@ -55,19 +29,26 @@
 }
 
 .header__call {
+  @extend .flexCenter;
+
   gap: 10px;
+
   width: 38px;
   height: 38px;
   padding: 8px;
+
   background: url("../assets/phone.svg") no-repeat center;
   border: 2px solid var(--Red);
 }
 
 .header__menu {
+  @extend .flexCenter;
+
   gap: 10px;
   width: 38px;
   height: 38px;
   padding: 8px;
+
   margin-right: 0;
   margin-left: auto;
   background: url("../assets/menu.svg") no-repeat center;
@@ -75,9 +56,12 @@
 }
 
 .menu__modal {
+  @extend .flexColumn;
   align-items: center;
   gap: 16px;
+
   padding: 8px 16px 32px 16px;
+
   background: var(--White);
   position: absolute;
   top: 0;
@@ -96,6 +80,7 @@
 }
 
 .modal__nav {
+  @extend .flexColumn;
   align-items: center;
   gap: 32px;
   width: 100%;
@@ -103,7 +88,11 @@
 
 .modal__nav a {
   text-transform: uppercase;
-  color: var(--Grey-Dark);
+  color: var(--Grey-Dark)
+}
+
+.nav__link {
+  @extend .dewi-400;
 }
 
 .modal__nav .nav__link:hover {
@@ -120,6 +109,7 @@
 }
 
 .modal__logo .header__logo__title {
+  @extend .dewi-900;
   display: block;
   color: #2C2B2E;
   font-size: 32px;
@@ -135,5 +125,3 @@
   display: flex;
   align-items: center;
 }
-
-/*# sourceMappingURL=header.css.map */

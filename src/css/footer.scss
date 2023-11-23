@@ -1,40 +1,14 @@
-.dewi-400, .footer__contacts__quote, .footer__contacts__link, .footer__form__input, .footer__form__text {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.dewi-700, .footer__form__submit {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.dewi-900, .footer__form__heading {
-  font-family: "RF Dewi Expanded", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 120%;
-}
-
-.flexColumn, .footer__contacts, .footer__form__inputs, .footer__form__label, .footer__form, .footer {
-  display: flex;
-  flex-direction: column;
-}
-
-.flexCenter, .footer__form__submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "vars.scss";
 
 .footer {
+  @extend .flexColumn;
   align-items: center;
   gap: 64px;
+
   position: relative;
   width: 100%;
   padding: 32px 16px 62px 16px;
+
   background: var(--Light-black);
 }
 
@@ -45,7 +19,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 0.3;
+  opacity: .3;
   background-image: url("../assets/logo.svg");
   background-repeat: no-repeat;
   background-size: 70vw;
@@ -58,43 +32,57 @@
 }
 
 .footer__form {
+  @extend .flexColumn;
   gap: 24px;
 }
 
 .footer__form__label {
+  @extend .flexColumn;
   gap: 16px;
 }
 
 .footer__form__heading {
+  @extend .dewi-900;
   color: var(--White);
+
   font-size: 24px;
   line-height: 150%;
   text-transform: uppercase;
 }
 
 .footer__form__text {
+  @extend .dewi-400;
   color: var(--White);
 }
 
 .footer__form__inputs {
+  @extend .flexColumn;
   align-items: flex-start;
   gap: 16px;
 }
 
 .footer__form__input {
+  @extend .dewi-400;
+
   display: flex;
   align-items: center;
+
   width: 100%;
   height: 34px;
   padding-left: 16px;
   outline: none;
+
   border: 2px solid var(--Grey);
   background: var(--White);
+
   color: var(--Dark-Grey);
 }
 
 .footer__form__submit {
+  @extend .dewi-700, .flexCenter;
+
   padding: 10px 8px;
+
   color: var(--White);
   text-transform: uppercase;
   background: var(--Grey);
@@ -116,20 +104,25 @@
 }
 
 .footer__contacts {
+  @extend .flexColumn;
   align-items: flex-start;
   gap: 16px;
 }
 
 .footer__contacts__link {
+  @extend .dewi-400;
+
   color: var(--Red);
   text-align: right;
+
   align-self: flex-end;
 }
 
 .footer__contacts__quote {
+  @extend .dewi-400;
+
   color: var(--Dark-Grey);
   text-align: right;
+
   align-self: flex-end;
 }
-
-/*# sourceMappingURL=footer.css.map */
