@@ -4,7 +4,7 @@
   line-height: 150%;
 }
 
-.dewi-700, .button {
+.dewi-700 {
   font-family: "RF Dewi", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -66,18 +66,6 @@
 
 body {
   background: var(--White);
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 8px;
-  background: none;
-  border: 2px solid var(--Black);
-  color: var(--Black);
-  font-size: 14px;
-  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,7 +1,10 @@
-const menuModal = document.getElementsByClassName('menu__modal')[0] || undefined
-const closeButton = document.getElementsByClassName('modal__close')[0] || undefined
+const menuModal = document.getElementsByClassName('menu')[0] || undefined
+const closeButton = document.getElementsByClassName('menu__close')[0] || undefined
 const menuButton = document.getElementsByClassName('header__menu')[0] || undefined
 
+if (menuModal) {
+    menuModal.style.display = 'none'
+}
 document.addEventListener("click", ({target}) => {
     switch (target) {
         case closeButton:

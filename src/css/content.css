@@ -1,4 +1,4 @@
-.dewi-400, .page__about__text, .card__text__role, .page__info__text__content {
+.dewi-400, .page__about__text, .card__text__role, .company__info__text__content {
   font-family: "RF Dewi", sans-serif;
   font-size: 16px;
   line-height: 150%;
@@ -11,14 +11,14 @@
   line-height: 100%;
 }
 
-.dewi-900, .page__about__heading, .card__text__name, .page__staff__department__heading, .page__info__text__heading {
+.dewi-900, .page__about__heading, .card__text__name, .page__staff__department__heading, .company__info__text__heading {
   font-family: "RF Dewi Expanded", sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 120%;
 }
 
-.flexColumn, .page__about, .card__text, .page__staff__department, .page__info__text, .page__info__heading, .page__info {
+.flexColumn, .page__about, .card__text, .page__staff__department, .company__info__text, .info__heading, .company__info {
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-.page__info {
+.company__info {
   align-items: flex-start;
   width: 100%;
   padding: 32px 16px;
@@ -37,7 +37,7 @@
   gap: 32px;
 }
 
-.page__info__heading {
+.info__heading {
   justify-content: center;
   height: 58px;
   color: var(--Light-Gray);
@@ -48,16 +48,16 @@
   text-transform: uppercase;
 }
 
-.page__info__text {
+.company__info__text {
   gap: 8px;
   align-items: flex-start;
 }
 
-.page__info__text__heading {
+.company__info__text__heading {
   color: var(--Dark-Grey);
 }
 
-.page__info__text__content {
+.company__info__text__content {
   color: var(--Light-Gray);
 }
 
@@ -66,7 +66,7 @@
   height: 24px;
 }
 
-.page__info__social {
+.company__info__social {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -80,7 +80,7 @@
   background: url("../assets/vk.svg") no-repeat center;
 }
 
-.page__info__text__content a {
+.company__info__text__content a {
   color: var(--Red);
   text-decoration-line: underline;
 }
@@ -127,7 +127,6 @@
 .page__about {
   align-items: flex-start;
   gap: 16px;
-  width: 390px;
   padding: 32px 16px;
 }
 
@@ -137,6 +136,46 @@
 
 .page__about__heading {
   color: var(--Dark-Grey);
+}
+
+@media (min-width: 1024px) {
+  .info {
+    display: grid;
+    grid-template-columns: 15fr 25fr;
+    height: 100vh;
+    background: var(--Light-black);
+  }
+  .company__info {
+    padding: 64px 64px 0 160px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .info__heading {
+    font-size: 48px;
+  }
+  .page__staff {
+    background: var(--White);
+    overflow-y: auto;
+    padding: 32px 160px 128px 40px;
+    width: 100%;
+  }
+  .page__staff__department__heading {
+    font-size: 28px;
+  }
+  .page__staff__department {
+    width: 100% !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 380px;
+  }
+  .page__staff__department__heading {
+    grid-column: 1/-1;
+  }
+  .page__about {
+    padding: 220px;
+  }
 }
 
 /*# sourceMappingURL=content.css.map */

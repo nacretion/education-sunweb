@@ -44,23 +44,3 @@
 body {
   background: var(--White);
 }
-
-.flexColumn {
-
-}
-
-.button {
-  @extend .dewi-700;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 10px 8px;
-  background: none;
-  border: 2px solid var(--Black);
-
-  color: var(--Black);
-  font-size: 14px;
-  text-transform: uppercase;
-}
