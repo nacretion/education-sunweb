@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <title></title>
+</head>
+<body>
+<div id="app">
+    <div>
+        <input type="number" @input="handleInput" id="firstNumber"/>
+        <input type="number" @input="handleInput" id="secondNumber"/>
+        <select v-model="isNok">
+            <option v-for="option in selectOptions" :value="option.value" :key="option.title">
+                {{ option.title }}
+            </option>
+        </select>
+    </div>
+    <div v-if="!isNok && nod">
+        <p>Найдем НОД({{firstNumber}}, {{secondNumber}}):
+            <br/>
+            Делители числа {{secondNumber}}: {{divisorsSecond}}
+            <br/>
+            Делители числа {{firstNumber}}: {{divisorsFirst}}
+            <br/>
+            Общие делители: {{getCommonDivisors()}}
+            <br/>
+            Наибольший общий делитель: {{nod}}
+        </p>
+    </div>
+    <div v-if="!!isNok && nok">
+        <p>Для вычисление наименьшего общего кратного (НОК) чисел {{firstNumber}} и {{secondNumber}}, мы можем воспользоваться формулой:</p>
+        <p>НОК({{firstNumber}}, {{secondNumber}}) = ({{firstNumber}} * {{secondNumber}}) / НОД({{firstNumber}}, {{secondNumber}})</p>
+        <p>Найдем сначала НОД({{firstNumber}}, {{secondNumber}}):
+            <br/>
+            Делители числа {{secondNumber}}: {{divisorsSecond}}
+            <br/>
+            Делители числа {{firstNumber}}: {{divisorsFirst}}
+            <br/>
+            Общие делители: {{getCommonDivisors()}}
+            <br/>
+            Наибольший общий делитель: {{nod}}
+        </p>
+        <p>
+            Теперь может вычислить НОК({{firstNumber}}, {{secondNumber}}):
+            <br/>
+            НОК({{firstNumber}}, {{secondNumber}}) =
+            ({{ firstNumber }} * {{ secondNumber }}) / {{nod}} =
+            {{ firstNumber*secondNumber }} / {{nod}} = {{nok}}
+        </p>
+        <p>
+            Таким образомб НОК({{firstNumber}}, {{secondNumber}}) = {{nok}}
+        </p>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
