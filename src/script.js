@@ -24,7 +24,7 @@ document.addEventListener("click", ({target}) => {
 })
 
 const handleInputName = (value, maxLength) => {
-    const text = value.replace(/[^A-Za-zА-Я\s]/g, '').replace(/\s{2,}/g, ' ')
+    const text = value.replace(/[^A-Za-zА-Яа-я\s]/g, '').replace(/\s{2,}/g, ' ')
     if (text.length > maxLength) {
         return value.slice(0, -1)
     }
