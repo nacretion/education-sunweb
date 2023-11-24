@@ -55,7 +55,7 @@
   height: 38px;
   padding: 8px;
 
-  background: url("../assets/phone.svg") no-repeat center;
+  background: url("../assets/svg/phone.svg") no-repeat center;
   border: 2px solid var(--Red);
 }
 
@@ -69,7 +69,7 @@
 
   margin-right: 0;
   margin-left: auto;
-  background: url("../assets/menu.svg") no-repeat center;
+  background: url("../assets/svg/menu.svg") no-repeat center;
   border: 2px solid var(--Grey);
 }
 
@@ -128,7 +128,7 @@
 }
 
 .menu__close {
-  background: url("../assets/close.svg") no-repeat center;
+  background: url("../assets/svg/close.svg") no-repeat center;
   border: 2px solid var(--Grey);
 }
 
