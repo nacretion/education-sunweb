@@ -45,20 +45,13 @@
   @extend .flexCenter;
   width: 24px;
   height: 24px;
+  fill: var(--Light-Gray);
 }
 
 .company__info__social {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-}
-
-.social-insta {
-  background: url("../assets/svg/insta.svg") no-repeat center;
-}
-
-.social-vk {
-  background: url("../assets/images/vk.svg") no-repeat center;
 }
 
 .company__info__text__content a {
@@ -138,6 +131,13 @@
     grid-template-columns: 15fr 25fr;
     height: 100vh;
     background: var(--Light-black);
+  }
+  .social {
+    transition: 300ms;
+  }
+
+  .social:hover {
+    fill: var(--Red);
   }
 
   .company__info {

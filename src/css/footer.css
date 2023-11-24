@@ -146,11 +146,24 @@
     word-wrap: normal;
   }
   .footer__form__input {
+    transition: 300ms;
     height: 48px;
     padding-left: 24px;
   }
+  .footer__form__input:hover, .footer__form__input:focus {
+    border-color: var(--Dark-Grey);
+  }
+  .footer__form__input:hover::placeholder {
+    color: var(--Dark-Grey);
+  }
   .footer__form__submit {
+    transition: 300ms;
+    cursor: pointer;
     padding: 16px;
+  }
+  .footer__form__submit:hover {
+    border-color: var(--Dark-Grey);
+    background-color: var(--Dark-Grey);
   }
 }
 

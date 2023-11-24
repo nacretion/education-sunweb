@@ -68,4 +68,8 @@ body {
   background: var(--White);
 }
 
+a {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=index.css.map */

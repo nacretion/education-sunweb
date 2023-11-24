@@ -184,12 +184,24 @@
     font-weight: 700;
     line-height: 100%;
     padding: 16px;
+
+    transition: 300ms;
   }
 
   .nav__link:hover {
     cursor: pointer;
     color: var(--Light-Gray);
     border: 2px solid var(--Light-Gray);
+  }
+
+  .button {
+    transition: 300ms;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    color: var(--Light-Gray);
+    background-color: var(--Black);
   }
 
   .menu__close, .menu__logo, .menu .button {
