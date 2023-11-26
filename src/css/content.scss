@@ -127,8 +127,10 @@
   }
 
   .info {
+    position: relative;
     display: grid;
     grid-template-columns: 15fr 25fr;
+    overflow-y: auto;
     height: 100vh;
     background: var(--Light-black);
   }
@@ -141,7 +143,10 @@
   }
 
   .company__info {
+    height: 100vh;
     padding: 64px 64px 0 160px;
+    position: sticky;
+    top: 0;
     margin-left: auto;
     margin-right: 0;
   }
@@ -152,7 +157,6 @@
 
   .page__staff {
     background: var(--White);
-    overflow-y: auto;
 
     padding: 32px 160px 128px 40px;
     width: 100%
@@ -162,7 +166,7 @@
   }
 
   .page__staff__department {
-    width: 100%!important;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
   }
