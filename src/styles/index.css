@@ -1,0 +1,28 @@
+@import "variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background: transparent;
+}
+
+@font-face {
+    font-family: "RF Dewi Expanded";
+    src: local("RF Dewi Expanded Black"), local("RFDewiExpanded-Black"), url("../assets/fonts/RFDewiExpanded-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RF Dewi";
+    src: local("RF Dewi Regular"), local("RFDewi-Regular"), url("../assets/fonts/RFDewi-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RF Dewi";
+    src: local("RF Dewi Bold"), local("RFDewi-Bold"), url("../assets/fonts/RFDewi-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
