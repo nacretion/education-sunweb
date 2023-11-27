@@ -2,6 +2,7 @@
 
 .button {
   @include dewi-700;
+  cursor: pointer;
 
   padding: 10px 8px;
   background: none;
@@ -11,7 +12,9 @@
   font-size: 14px;
   text-transform: uppercase;
 }
+
 .button:disabled {
+  cursor: not-allowed;
   color: var(--White);
   width: 100%;
   background: var(--Grey);
@@ -200,7 +203,6 @@
   }
 
   .nav__link:hover {
-    cursor: pointer;
     color: var(--Light-Gray);
     border: 2px solid var(--Light-Gray);
   }
@@ -210,7 +212,6 @@
   }
 
   .button:hover {
-    cursor: pointer;
     color: var(--Light-Gray);
     background-color: var(--Black);
   }

@@ -63,16 +63,15 @@
   text-decoration-line: underline;
 }
 
-.page__staff__department {
+.department {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  width: 390px;
   padding: 32px 16px;
 }
 
-.page__staff__department__heading {
+.department__heading {
   font-family: "RF Dewi Expanded", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -87,12 +86,15 @@
 .card {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 32px;
 }
 
 .card__image {
   height: 200px;
-  object-fit: cover;
+  width: 150px;
+  object-fit: contain;
+  object-position: left;
 }
 
 .card__text {
@@ -165,15 +167,15 @@
   .info__heading {
     font-size: 48px;
   }
-  .page__staff {
+  .staff {
     background: var(--White);
     padding: 32px 160px 128px 40px;
     width: 100%;
   }
-  .page__staff__department__heading {
+  .department__heading {
     font-size: 28px;
   }
-  .page__staff__department {
+  .department {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -181,11 +183,16 @@
   .card {
     width: 380px;
   }
-  .page__staff__department__heading {
+  .department__heading {
     grid-column: 1/-1;
   }
   .about {
     padding: 220px;
+  }
+}
+@media (max-width: 360px) {
+  .card {
+    flex-direction: column;
   }
 }
 
