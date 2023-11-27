@@ -1,35 +1,6 @@
-.dewi-400, .footer__contacts__quote, .footer__contacts__link, .footer__form__input, .footer__form__text {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.dewi-700, .footer__form__submit {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.dewi-900, .footer__form__heading {
-  font-family: "RF Dewi Expanded", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 120%;
-}
-
-.flexColumn, .footer__contacts, .footer__form__inputs, .footer__form__label, .footer__form, .footer {
+.footer {
   display: flex;
   flex-direction: column;
-}
-
-.flexCenter, .footer__form__submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
   align-items: center;
   gap: 64px;
   position: relative;
@@ -47,14 +18,22 @@
 }
 
 .footer__form {
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
 .footer__form__label {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
 .footer__form__heading {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 120%;
   color: var(--White);
   font-size: 24px;
   line-height: 150%;
@@ -62,15 +41,23 @@
 }
 
 .footer__form__text {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
   color: var(--White);
 }
 
 .footer__form__inputs {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 }
 
 .footer__form__input {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
   display: flex;
   align-items: center;
   width: 100%;
@@ -83,6 +70,13 @@
 }
 
 .footer__form__submit {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 8px;
   color: var(--White);
   text-transform: uppercase;
@@ -105,17 +99,25 @@
 }
 
 .footer__contacts {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 }
 
 .footer__contacts__link {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
   color: var(--Red);
   text-align: right;
   align-self: flex-end;
 }
 
 .footer__contacts__quote {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
   color: var(--Dark-Grey);
   text-align: right;
   word-wrap: anywhere;

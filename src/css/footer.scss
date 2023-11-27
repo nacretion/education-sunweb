@@ -1,7 +1,7 @@
 @import "vars.scss";
 
 .footer {
-  @extend .flexColumn;
+  @include flexColumn;
   align-items: center;
   gap: 64px;
 
@@ -21,17 +21,17 @@
 }
 
 .footer__form {
-  @extend .flexColumn;
+  @include flexColumn;
   gap: 24px;
 }
 
 .footer__form__label {
-  @extend .flexColumn;
+  @include flexColumn;
   gap: 16px;
 }
 
 .footer__form__heading {
-  @extend .dewi-900;
+  @include dewi-900;
   color: var(--White);
 
   font-size: 24px;
@@ -40,18 +40,18 @@
 }
 
 .footer__form__text {
-  @extend .dewi-400;
+  @include dewi-400;
   color: var(--White);
 }
 
 .footer__form__inputs {
-  @extend .flexColumn;
+  @include flexColumn;
   align-items: flex-start;
   gap: 16px;
 }
 
 .footer__form__input {
-  @extend .dewi-400;
+  @include dewi-400;
 
   display: flex;
   align-items: center;
@@ -68,7 +68,8 @@
 }
 
 .footer__form__submit {
-  @extend .dewi-700, .flexCenter;
+  @include dewi-700;
+  @include flexCenter;
 
   padding: 10px 8px;
 
@@ -93,13 +94,13 @@
 }
 
 .footer__contacts {
-  @extend .flexColumn;
+  @include flexColumn;
   align-items: flex-start;
   gap: 16px;
 }
 
 .footer__contacts__link {
-  @extend .dewi-400;
+  @include dewi-400;
 
   color: var(--Red);
   text-align: right;
@@ -108,7 +109,7 @@
 }
 
 .footer__contacts__quote {
-  @extend .dewi-400;
+  @include dewi-400;
 
   color: var(--Dark-Grey);
   text-align: right;

@@ -1,35 +1,6 @@
-.dewi-400, .page__about__text, .card__text__role, .company__info__text__content {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.dewi-700 {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.dewi-900, .page__about__heading, .card__text__name, .page__staff__department__heading, .company__info__text__heading {
-  font-family: "RF Dewi Expanded", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 120%;
-}
-
-.flexColumn, .page__about, .card__text, .page__staff__department, .company__info__text, .info__heading, .company__info {
+.company__info {
   display: flex;
   flex-direction: column;
-}
-
-.flexCenter, .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.company__info {
   align-items: flex-start;
   width: 100%;
   padding: 32px 16px;
@@ -38,6 +9,8 @@
 }
 
 .info__heading {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 58px;
   color: var(--Light-Gray);
@@ -49,19 +22,31 @@
 }
 
 .company__info__text {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
   align-items: flex-start;
 }
 
 .company__info__text__heading {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 120%;
   color: var(--Dark-Grey);
 }
 
 .company__info__text__content {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
   color: var(--Light-Gray);
 }
 
 .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
   fill: var(--Light-Gray);
@@ -79,6 +64,8 @@
 }
 
 .page__staff__department {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   width: 390px;
@@ -86,6 +73,10 @@
 }
 
 .page__staff__department__heading {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 120%;
   width: 100%;
   color: var(--Light-black);
   font-size: 24px;
@@ -105,28 +96,46 @@
 }
 
 .card__text {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
 }
 
 .card__text__name {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 120%;
   color: var(--Black);
 }
 
 .card__text__role {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
   color: var(--Red);
 }
 
 .page__about {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   padding: 32px 16px;
 }
 
 .page__about__text {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
   color: var(--Dark-Grey);
 }
 
 .page__about__heading {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 120%;
   color: var(--Dark-Grey);
 }
 
