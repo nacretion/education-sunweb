@@ -104,7 +104,7 @@
   color: var(--Red);
 }
 
-.page__about {
+.about {
   @include flexColumn;
   align-items: flex-start;
   gap: 16px;
@@ -112,12 +112,12 @@
   padding: 32px 16px;
 }
 
-.page__about__text {
+.about__text {
   @include dewi-400;
   color: var(--Dark-Grey);
 }
 
-.page__about__heading {
+.about__heading {
   @include dewi-900;
   color: var(--Dark-Grey);
 }
@@ -177,7 +177,7 @@
   .page__staff__department__heading {
     grid-column: 1/-1;
   }
-  .page__about {
+  .about {
     padding: 220px;
   }
 

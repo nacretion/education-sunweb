@@ -13,23 +13,23 @@
   background-position: right 120%;
 }
 
-.footer__form, .footer__contacts {
+.footer__form, .contacts {
   z-index: 2;
 }
 
-.footer__form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.footer__form__label {
+.form__label {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.footer__form__heading {
+.form__heading {
   font-family: "RF Dewi Expanded", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -40,21 +40,21 @@
   text-transform: uppercase;
 }
 
-.footer__form__text {
+.form__text {
   font-family: "RF Dewi", sans-serif;
   font-size: 16px;
   line-height: 150%;
   color: var(--White);
 }
 
-.footer__form__inputs {
+.form__inputs {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 }
 
-.footer__form__input {
+.input {
   font-family: "RF Dewi", sans-serif;
   font-size: 16px;
   line-height: 150%;
@@ -69,28 +69,14 @@
   color: var(--Dark-Grey);
 }
 
-.footer__form__submit {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 8px;
-  color: var(--White);
-  text-transform: uppercase;
-  background: var(--Grey);
-}
-
-.footer__form__agreement {
+.form__agreement {
   color: var(--Dark-Grey);
   font-family: Inter, sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
 
-.footer__form__agreement__link {
+.agreement__link {
   color: var(--Red);
   font-family: Inter, sans-serif;
   font-size: 14px;
@@ -98,23 +84,24 @@
   text-decoration-line: underline;
 }
 
-.footer__contacts {
+.contacts {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 }
 
-.footer__contacts__link {
+.contacts__link {
   font-family: "RF Dewi", sans-serif;
   font-size: 16px;
   line-height: 150%;
   color: var(--Red);
   text-align: right;
+  text-decoration: none;
   align-self: flex-end;
 }
 
-.footer__contacts__quote {
+.contacts__quote {
   font-family: "RF Dewi", sans-serif;
   font-size: 16px;
   line-height: 150%;
@@ -136,7 +123,7 @@
     background-size: 35vw;
     background-position: right bottom;
   }
-  .footer__form__inputs {
+  .form__inputs {
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr 1fr;
@@ -144,10 +131,10 @@
   #comment {
     grid-column: 1/-1;
   }
-  .footer__contacts__quote {
+  .contacts__quote {
     word-wrap: normal;
   }
-  .footer__form__input {
+  .input {
     transition: 300ms;
     height: 48px;
     padding-left: 24px;
@@ -157,15 +144,6 @@
   }
   .footer__form__input:hover::placeholder {
     color: var(--Dark-Grey);
-  }
-  .footer__form__submit {
-    transition: 300ms;
-    cursor: pointer;
-    padding: 16px;
-  }
-  .footer__form__submit:hover {
-    border-color: var(--Dark-Grey);
-    background-color: var(--Dark-Grey);
   }
 }
 

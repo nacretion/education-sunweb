@@ -116,7 +116,7 @@
   color: var(--Red);
 }
 
-.page__about {
+.about {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -124,14 +124,14 @@
   padding: 32px 16px;
 }
 
-.page__about__text {
+.about__text {
   font-family: "RF Dewi", sans-serif;
   font-size: 16px;
   line-height: 150%;
   color: var(--Dark-Grey);
 }
 
-.page__about__heading {
+.about__heading {
   font-family: "RF Dewi Expanded", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -184,7 +184,7 @@
   .page__staff__department__heading {
     grid-column: 1/-1;
   }
-  .page__about {
+  .about {
     padding: 220px;
   }
 }

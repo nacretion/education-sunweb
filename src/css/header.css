@@ -11,6 +11,17 @@
   text-transform: uppercase;
 }
 
+.button:disabled {
+  color: var(--White);
+  width: 100%;
+  background: var(--Grey);
+}
+
+.button:disabled:hover {
+  color: var(--White);
+  background: var(--Grey);
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -26,15 +37,15 @@
   padding: 8px 16px;
 }
 
-.header__logo {
+.logo {
   gap: 20px;
 }
 
-.header__logo__image {
+.logo__image {
   width: 38px;
 }
 
-.header__logo__title {
+.logo__title {
   font-family: "RF Dewi Expanded", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -45,7 +56,7 @@
   text-transform: uppercase;
 }
 
-.header__call__heading, .header__call__text {
+.call__heading, .call__text {
   display: none;
 }
 
@@ -120,12 +131,12 @@
   width: 100%;
 }
 
-.button-call-us {
+.button--call-us {
   color: var(--Red);
   border-color: var(--Red);
 }
 
-.menu__logo .header__logo__title {
+.menu__logo .logo__title {
   display: block;
 }
 
@@ -146,6 +157,7 @@
     padding: 15px 160px;
   }
   .button {
+    padding: 16px;
     margin-left: auto;
   }
   .header__call {
@@ -194,8 +206,9 @@
   .menu__close, .menu__logo, .menu .button {
     display: none;
   }
-  .header__call__heading {
+  .call__heading {
     display: block;
+    text-decoration: none;
     color: var(--Red);
     text-align: right;
     font-family: "RF Dewi Expanded", sans-serif;
@@ -205,7 +218,7 @@
     line-height: normal;
     letter-spacing: 0.036px;
   }
-  .header__call__text {
+  .call__text {
     display: block;
     color: var(--Black);
     text-align: right;
@@ -216,7 +229,7 @@
   .header__menu {
     display: none;
   }
-  .header__logo__title {
+  .logo__title {
     display: block;
   }
 }
