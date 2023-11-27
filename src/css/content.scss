@@ -1,0 +1,192 @@
+@import "vars.scss";
+
+
+.company__info {
+  @include flexColumn;
+  align-items: flex-start;
+
+  width: 100%;
+  padding: 32px 16px;
+  background: var(--Light-black);
+  gap: 32px;
+}
+
+.info__heading {
+  @include flexColumn;
+  justify-content: center;
+
+  height: 58px;
+
+  color: var(--Light-Gray);
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.company__info__text {
+  @include flexColumn;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.company__info__text__heading {
+  @include dewi-900;
+  color: var(--Dark-Grey);
+}
+
+.company__info__text__content {
+  @include dewi-400;
+  color: var(--Light-Gray);
+}
+
+.social {
+  @include flexCenter;
+  width: 24px;
+  height: 24px;
+  fill: var(--Light-Gray);
+}
+
+.company__info__social {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.company__info__text__content a {
+  color: var(--Red);
+  text-decoration-line: underline;
+}
+
+.department {
+  @include flexColumn;
+  align-items: flex-start;
+  gap: 32px;
+
+  padding: 32px 16px;
+}
+
+.department__heading {
+  @include dewi-900;
+  width: 100%;
+  color: var(--Light-black);
+
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+}
+
+.card__image {
+  height: 200px;
+  width: 150px;
+  object-fit: contain;
+  object-position: left;
+}
+
+.card__text {
+  @include flexColumn;
+  align-items: flex-start;
+}
+
+.card__name {
+  @include dewi-900;
+  color: var(--Black);
+}
+
+.card__role {
+  @include dewi-400;
+  color: var(--Red);
+}
+
+.about {
+  @include flexColumn;
+  align-items: flex-start;
+  gap: 16px;
+
+  padding: 32px 16px;
+}
+
+.about__text {
+  @include dewi-400;
+  color: var(--Dark-Grey);
+}
+
+.about__heading {
+  @include dewi-900;
+  color: var(--Dark-Grey);
+}
+
+@media (min-width: 1024px) {
+  .main {
+  }
+
+  .info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 15fr 25fr;
+    overflow-y: auto;
+    height: 100vh;
+    background: var(--Light-black);
+  }
+  .social {
+    transition: 300ms;
+  }
+
+  .social:hover {
+    fill: var(--Red);
+  }
+
+  .company__info {
+    height: 100vh;
+    padding: 64px 64px 0 160px;
+    position: sticky;
+    top: 0;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .info__heading {
+    font-size: 48px;
+  }
+
+  .staff {
+    background: var(--White);
+
+    padding: 32px 160px 128px 40px;
+    width: 100%
+  }
+  .department__heading {
+    font-size: 28px;
+  }
+
+  .department {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 380px;
+  }
+
+  .department__heading {
+    grid-column: 1/-1;
+  }
+  .about {
+    padding: 220px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .card {
+    flex-direction: column;
+  }
+}

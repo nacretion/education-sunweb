@@ -1,0 +1,30 @@
+@mixin dewi-400 {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@mixin dewi-700 {
+  font-family: 'RF Dewi', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin dewi-900 {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,152 @@
+@import "vars.scss";
+
+.footer {
+  @include flexColumn;
+  align-items: center;
+  gap: 64px;
+
+  position: relative;
+  width: 100%;
+  padding: 32px 16px 62px 16px;
+
+  background: var(--Light-black);
+  background-image: url("../assets/svg/logo180rotate.svg");
+  background-repeat: no-repeat;
+  background-size: 70vw;
+  background-position: right 120%;
+}
+
+.footer__form, .contacts {
+  z-index: 2;
+}
+
+.form {
+  @include flexColumn;
+  gap: 24px;
+}
+
+.form__label {
+  @include flexColumn;
+  gap: 16px;
+}
+
+.form__heading {
+  @include dewi-900;
+  color: var(--White);
+
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.form__text {
+  @include dewi-400;
+  color: var(--White);
+}
+
+.form__inputs {
+  @include flexColumn;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.input {
+  @include dewi-400;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 34px;
+  padding-left: 16px;
+  outline: none;
+
+  border: 2px solid var(--Grey);
+  background: var(--White);
+
+  color: var(--Dark-Grey);
+}
+
+.form__agreement {
+  color: var(--Dark-Grey);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.agreement__link {
+  color: var(--Red);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: underline;
+}
+
+.contacts {
+  @include flexColumn;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contacts__link {
+  @include dewi-400;
+
+  color: var(--Red);
+  text-align: right;
+
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.contacts__quote {
+  @include dewi-400;
+
+  color: var(--Dark-Grey);
+  text-align: right;
+  word-wrap: anywhere;
+  align-self: flex-end;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 102px 160px 59px 160px;
+
+    background-image: url("../assets/svg/logo155rotate.svg");
+    background-repeat: no-repeat;
+    background-size: 35vw;
+    background-position: right bottom;
+  }
+
+  .form__inputs {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #comment {
+    grid-column: 1/-1;
+  }
+
+
+  .contacts__quote {
+    word-wrap: normal;
+  }
+
+  .input {
+    transition: 300ms;
+    height: 48px;
+    padding-left: 24px;
+  }
+
+  .footer__form__input:hover, .footer__form__input:focus {
+    border-color: var(--Dark-Grey);
+  }
+  .footer__form__input:hover::placeholder {
+    color: var(--Dark-Grey);
+  }
+}
