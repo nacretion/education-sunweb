@@ -96,12 +96,12 @@
   align-items: flex-start;
 }
 
-.card__text__name {
+.card__name {
   @include dewi-900;
   color: var(--Black);
 }
 
-.card__text__role {
+.card__role {
   @include dewi-400;
   color: var(--Red);
 }
