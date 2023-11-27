@@ -14,18 +14,21 @@
   src: local("RF Dewi Expanded Black"), local("RFDewiExpanded-Black"), url("../assets/fonts/RFDewiExpanded-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
+  font-display: fallback;
 }
 @font-face {
   font-family: "RF Dewi";
   src: local("RF Dewi Regular"), local("RFDewi-Regular"), url("../assets/fonts/RFDewi-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: fallback;
 }
 @font-face {
   font-family: "RF Dewi";
   src: local("RF Dewi Bold"), local("RFDewi-Bold"), url("../assets/fonts/RFDewi-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+  font-display: fallback;
 }
 * {
   margin: 0;
@@ -39,6 +42,7 @@ body {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */
