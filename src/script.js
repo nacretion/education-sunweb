@@ -5,9 +5,10 @@ const inputName = document.getElementById('name')
 const inputPhone = document.getElementById('phone')
 const inputComment = document.getElementById('comment')
 
-if (menuModal) {
+if (menuModal && window.innerWidth < 1024) {
     menuModal.style.display = 'none'
 }
+
 document.addEventListener("click", ({target}) => {
     switch (target) {
         case closeButton:
@@ -51,9 +52,15 @@ const formatPhoneNumber = (inputValue) => {
     }
 }
 
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 1024) {
+        menuModal.style.display = 'none'
+    } else {
+        menuModal.style.display = 'flex'
+    }
+})
+
 document.addEventListener('input', ({target}) => {
-
-
     switch (target) {
         case inputName:
             inputName.value = handleInputName(target.value, 25)
