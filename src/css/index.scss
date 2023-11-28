@@ -306,6 +306,9 @@ body {
   color: #1A1A1A;
   background: #EBEBEB;
 }
+.main__form {
+  margin: 120px 0;
+}
 
 .form__label {
   display: flex;
@@ -346,6 +349,9 @@ body {
 
   font-size: 16px;
   line-height: 32px;
+}
+.main__info:nth-of-type(1) {
+  margin-top: 120px;
 }
 
 .info {
@@ -446,7 +452,6 @@ body {
 }
 
 .footer__card {
-  // todo: вывести в вариант карточки
   width: 360px;
 
   .card__image-wrapper {
@@ -618,12 +623,12 @@ body {
     text-align: center;
   }
 
-  .info:nth-child(even) .info__content {
+  .info:nth-child(odd) .info__content {
     background: rgba(0,0,0,.75);
     color: #F6F6F6;
   }
 
-  .info:nth-child(odd) .info__content {
+  .info:nth-child(even) .info__content {
     background: rgba(255,255,255,.9);
   }
 

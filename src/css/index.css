@@ -278,6 +278,10 @@ body {
   background: #EBEBEB;
 }
 
+.main__form {
+  margin: 120px 0;
+}
+
 .form__label {
   display: flex;
   flex-direction: column;
@@ -313,6 +317,10 @@ body {
   color: rgba(26, 26, 26, 0.5);
   font-size: 16px;
   line-height: 32px;
+}
+
+.main__info:nth-of-type(1) {
+  margin-top: 120px;
 }
 
 .info {
@@ -561,11 +569,11 @@ body {
     align-items: center;
     text-align: center;
   }
-  .info:nth-child(even) .info__content {
+  .info:nth-child(odd) .info__content {
     background: rgba(0, 0, 0, 0.75);
     color: #F6F6F6;
   }
-  .info:nth-child(odd) .info__content {
+  .info:nth-child(even) .info__content {
     background: rgba(255, 255, 255, 0.9);
   }
   .footer__heading {
