@@ -209,13 +209,13 @@ body {
   justify-content: center;
   column-gap: 40px;
   row-gap: 80px;
+  max-width: 1440px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 360px;
   transition: transform 300ms;
 }
 .card:hover .card__image {
@@ -225,10 +225,6 @@ body {
 .card_small {
   width: 360px;
 }
-.card_small .card__image-wrapper {
-  width: 360px;
-  height: 230px;
-}
 
 .break {
   flex-basis: 100%;
@@ -237,12 +233,9 @@ body {
 .card_medium {
   width: 560px;
 }
-.card_medium .card__image-wrapper {
-  width: 560px;
-  height: 340px;
-}
 
 .card__image-wrapper {
+  aspect-ratio: 360/230;
   overflow: hidden;
 }
 
